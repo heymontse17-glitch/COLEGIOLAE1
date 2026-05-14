@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colegio de Licenciados en Administración de Empresas Q. Roo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .bg-brand-green { background-color: #70c131; }
+        .text-brand-green { color: #70c131; }
+        
+        .hero-section {
+            position: relative;
+            background-color: #ffffff;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 75vh;
+        }
+        
+        .hero-section::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            height: 80%;
+            background-image: url('logo.jpeg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            opacity: 0.1; 
+            z-index: 0;
+        }
+
+        .hero-content { position: relative; z-index: 1; }
+
+        /* Estilos para el scroll de comentarios */
+        #lista-comentarios::-webkit-scrollbar {
+            width: 6px;
+        }
+        #lista-comentarios::-webkit-scrollbar-thumb {
+            background-color: #70c131;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+    <nav class="bg-white shadow-md fixed w-full z-50 top-0">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between h-20 items-center">
+            <div class="flex items-center space-x-3">
+                <img src="logo.jpeg" class="h-14 w-auto" alt="Logo">
+                <!-- Título modificado a COLEGIO LAE -->
+                <span class="font-black text-sm leading-tight uppercase">COLEGIO <br><span class="text-brand-green">LAE</span></span>
+            </div>
+            <div class="hidden md:flex space-x-6 font-bold text-gray-600">
+                <a href="#inicio" class="hover:text-brand-green">Inicio</a>
+                <a href="#actividades">Actividades</a>
+                <a href="#mision-vision">Nosotros</a>
+                <a href="#comentarios">Comentarios</a>
+                <a href="#afiliate" class="text-brand-green">Afiliarse</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="inicio" class="hero-section mt-20 px-6">
+        <div class="max-w-5xl mx-auto text-center hero-content">
+            <h1 class="text-4xl md:text-6xl font-black text-gray-900 mb-6 uppercase">
+                COLEGIO DE LICENCIADOS EN ADMINISTRACIÓN DE EMPRESAS <br>
+                <span class="text-brand-green italic">QUINTANA ROO A.C.</span>
+            </h1>
+            <p class="text-xl font-bold text-gray-700 mb-8 italic">"Excelencia y Ética Profesional"</p>
+            <a href="#afiliate" class="bg-brand-green text-white px-8 py-4 rounded-xl font-black text-lg shadow-lg hover:scale-105 transition inline-block">UNIRSE AL COLEGIO</a>
+        </div>
+    </section>
+
+    <section id="actividades" class="py-20 bg-gray-50 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-black text-center mb-12 uppercase tracking-widest">Eventos y Actividades</h2>
+
+            <div class="bg-white rounded-3xl shadow-lg overflow-hidden border mb-10 flex flex-col md:flex-row">
+                <div class="md:w-1/3 bg-gray-100 p-4 flex items-center justify-center">
+                    <img src="evento.jpeg" class="max-h-80 rounded-lg shadow-md" alt="Evento">
+                </div>
+                <div class="md:w-2/3 p-8">
+                    <span class="text-brand-green font-black text-xs uppercase tracking-widest">Próximo Evento / Reciente</span>
+                    <h3 class="text-3xl font-black my-2">DESAYUNO DE CONVIVENCIA PROFESIONAL</h3>
+                    <p class="text-gray-600 font-bold mb-4">Sede del Colegio | 09:00 AM</p>
+                    
+                    <div class="grid grid-cols-5 gap-2 mt-4">
+                        <img src="e1.jpeg" class="h-16 w-full object-cover rounded-lg border">
+                        <img src="e2.jpeg" class="h-16 w-full object-cover rounded-lg border">
+                        <img src="e3.jpeg" class="h-16 w-full object-cover rounded-lg border">
+                        <img src="e4.jpeg" class="h-16 w-full object-cover rounded-lg border">
+                        <img src="e5.jpeg" class="h-16 w-full object-cover rounded-lg border">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="mision-vision" class="py-20 bg-white px-6">
+        <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-10">
+            <div class="border-l-4 border-brand-green pl-6">
+                <h2 class="text-xl font-black text-brand-green uppercase mb-4">Misión</h2>
+                <p class="font-bold text-gray-700">Agrupar y representar a los Licenciados en Administración en Quintana Roo, fomentando la ética y educación continua.</p>
+            </div>
+            <div class="border-l-4 border-gray-800 pl-6">
+                <h2 class="text-xl font-black text-gray-800 uppercase mb-4">Visión</h2>
+                <p class="font-bold text-gray-700">Ser el referente líder en vinculación profesional administrativa en el Caribe Mexicano.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="comentarios" class="py-20 bg-gray-50 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-black text-center mb-10 uppercase tracking-widest text-gray-900">Buzón de Comentarios</h2>
+            
+            <!-- Formulario de Comentario -->
+            <div class="bg-white p-8 rounded-3xl shadow-xl border border-gray-100 mb-10">
+                <div class="mb-6 text-center">
+                    <p class="text-gray-500 font-bold italic">¡Tu opinión nos ayuda a crecer como comunidad!</p>
+                </div>
+                <form id="comment-form" class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-black text-gray-700 uppercase mb-2">Nombre completo</label>
+                        <input type="text" id="user-name" required class="w-full px-4 py-3 rounded-xl border focus:ring-2 focus:ring-brand-green outline-none transition" placeholder="Escribe tu nombre">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-black text-gray-700 uppercase mb-2">Comentario</label>
+                        <textarea id="user-comment" required rows="4" class="w-full px-4 py-3 rounded-xl border focus:ring-2 focus:ring-brand-green outline-none transition" placeholder="Comparte tus ideas con nosotros..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-brand-green text-white font-black py-4 rounded-xl hover:bg-green-600 shadow-lg transition transform hover:scale-[1.01] active:scale-95">
+                        ENVIAR COMENTARIO
+                    </button>
+                </form>
+            </div>
+
+            <!-- Lista de Comentarios Registrados -->
+            <div class="bg-white p-6 rounded-3xl shadow-md border border-gray-100">
+                <h3 class="text-lg font-black text-brand-green mb-4 uppercase">Comentarios Recientes</h3>
+                <div id="lista-comentarios" class="space-y-4 max-h-96 overflow-y-auto pr-2">
+                    <!-- Los comentarios aparecerán aquí mediante JS -->
+                    <p id="no-comments" class="text-gray-400 text-center py-10 font-bold italic">Aún no hay comentarios. ¡Sé el primero!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="afiliate" class="bg-gray-900 text-white py-16 px-6 text-center">
+        <img src="logo.jpeg" class="h-20 mx-auto mb-6 grayscale invert" alt="Logo">
+        <h2 class="text-2xl font-black mb-6 uppercase">¿LISTO PARA AFILIARTE?</h2>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScJ0GskRMu_3JyPOT9OgdINGQfCZlNepKF92j5gxj9sIncfIQ/viewform" target="_blank" class="bg-brand-green px-10 py-4 rounded-full font-black hover:bg-white hover:text-brand-green transition">RELLENAR FORMULARIO</a>
+        
+        <p class="mt-12 text-gray-500 text-xs font-bold uppercase tracking-widest">
+            Av. Insurgentes 918, Chetumal, Q. Roo | © 2026 Colegio de Licenciados en Administración
+        </p>
+    </footer>
+
+    <script>
+        const commentForm = document.getElementById('comment-form');
+        const listaComentarios = document.getElementById('lista-comentarios');
+        const noCommentsMsg = document.getElementById('no-comments');
+
+        // Función para cargar comentarios guardados al iniciar
+        window.onload = function() {
+            renderComments();
+        };
+
+        // Función para renderizar comentarios
+        function renderComments() {
+            const comments = JSON.parse(localStorage.getItem('colegio_comments')) || [];
+            if (comments.length > 0) {
+                noCommentsMsg.style.display = 'none';
+                listaComentarios.innerHTML = '';
+                comments.reverse().forEach(c => {
+                    const commentEl = document.createElement('div');
+                    commentEl.className = 'p-4 bg-gray-50 rounded-2xl border border-gray-100 shadow-sm';
+                    commentEl.innerHTML = `
+                        <div class="flex justify-between items-center mb-1">
+                            <span class="font-black text-brand-green text-sm uppercase">${c.name}</span>
+                            <span class="text-xs text-gray-400">${c.date}</span>
+                        </div>
+                        <p class="text-gray-700 text-sm font-medium leading-relaxed">${c.text}</p>
+                    `;
+                    listaComentarios.appendChild(commentEl);
+                });
+            } else {
+                noCommentsMsg.style.display = 'block';
+            }
+        }
+
+        // Manejar el envío del formulario
+        commentForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const name = document.getElementById('user-name').value;
+            const text = document.getElementById('user-comment').value;
+            const date = new Date().toLocaleDateString('es-MX', { 
+                day: '2-digit', month: 'short', hour: '2-digit', minute: '2-digit' 
+            });
+
+            const newComment = { name, text, date };
+            
+            // Guardar en localStorage
+            const comments = JSON.parse(localStorage.getItem('colegio_comments')) || [];
+            comments.push(newComment);
+            localStorage.setItem('colegio_comments', JSON.stringify(comments));
+
+            // Limpiar formulario y refrescar lista
+            commentForm.reset();
+            renderComments();
+        });
+    </script>
+
+</body>
+</html>
