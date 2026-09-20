@@ -9,6 +9,7 @@
         html { scroll-behavior: smooth; }
         .bg-brand-green { background-color: #70c131; }
         .text-brand-green { color: #70c131; }
+        .border-brand-green { border-color: #70c131; }
         
         .hero-section {
             position: relative;
@@ -54,14 +55,14 @@
         <div class="max-w-7xl mx-auto px-4 flex justify-between h-20 items-center">
             <div class="flex items-center space-x-3">
                 <img src="logo.jpeg" class="h-14 w-auto" alt="Logo">
-                <!-- Título modificado a COLEGIO LAE -->
                 <span class="font-black text-sm leading-tight uppercase">COLEGIO <br><span class="text-brand-green">LAE</span></span>
             </div>
             <div class="hidden md:flex space-x-6 font-bold text-gray-600">
                 <a href="#inicio" class="hover:text-brand-green">Inicio</a>
-                <a href="#actividades">Actividades</a>
-                <a href="#mision-vision">Nosotros</a>
-                <a href="#comentarios">Comentarios</a>
+                <a href="#historia" class="hover:text-brand-green text-gray-900">Nuestra Historia</a>
+                <a href="#actividades" class="hover:text-brand-green">Actividades</a>
+                <a href="#mision-vision" class="hover:text-brand-green">Nosotros</a>
+                <a href="#comentarios" class="hover:text-brand-green">Comentarios</a>
                 <a href="#afiliate" class="text-brand-green">Afiliarse</a>
             </div>
         </div>
@@ -78,16 +79,210 @@
         </div>
     </section>
 
+    <section id="historia" class="py-20 bg-gray-100/70 px-4">
+        <div class="max-w-6xl mx-auto">
+            
+            <div class="text-center mb-10">
+                <span class="text-brand-green font-black text-xs uppercase tracking-widest block mb-2">Trayectoria e Identidad</span>
+                <h2 class="text-3xl md:text-5xl font-black uppercase text-gray-900 tracking-tight">Nuestra Historia</h2>
+                <div class="w-24 h-1.5 bg-brand-green mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- Imagen Destacada de la Historia (Banner Inicial) -->
+            <div class="mb-12 rounded-3xl overflow-hidden shadow-2xl border-2 border-brand-green/20 group">
+                <img src="historia.jpeg" class="w-full h-auto object-cover transform group-hover:scale-[1.01] transition duration-500" alt="Historia del Colegio de LAES Quintana Roo">
+            </div>
+
+            <!-- Datos Rápidos de Impacto -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+                <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100 text-center">
+                    <span class="text-4xl font-black text-brand-green block mb-1">1991</span>
+                    <span class="text-xs font-bold text-gray-600 uppercase">Año de Fundación</span>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100 text-center">
+                    <span class="text-4xl font-black text-brand-green block mb-1">+34</span>
+                    <span class="text-xs font-bold text-gray-600 uppercase">Años de Historia</span>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100 text-center">
+                    <span class="text-4xl font-black text-brand-green block mb-1">ITCH</span>
+                    <span class="text-xs font-bold text-gray-600 uppercase">Cuna Profesional</span>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100 text-center">
+                    <span class="text-4xl font-black text-brand-green block mb-1">120</span>
+                    <span class="text-xs font-bold text-gray-600 uppercase">Capacidad Centro Social</span>
+                </div>
+            </div>
+
+            <!-- Narrativa Organizada en Tarjetas Llamativas -->
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                
+                <!-- Tarjeta 1: Los Orígenes -->
+                <div class="bg-white p-8 rounded-3xl shadow-lg border-l-8 border-brand-green relative overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center space-x-3 mb-4">
+                            <span class="bg-green-100 text-brand-green p-3 rounded-2xl font-black text-xl">01</span>
+                            <h3 class="text-2xl font-black text-gray-900 uppercase">El Origen y la Visión</h3>
+                        </div>
+                        <p class="text-gray-700 font-medium leading-relaxed mb-4">
+                            El <strong>Colegio de Licenciados en Administración de Empresas del Estado de Quintana Roo, A.C. (CLAEQROO)</strong> fue fundado en el año <strong>1991</strong> en la ciudad de Chetumal, capital del estado, por un grupo de jóvenes profesionistas entusiastas que compartían una misma visión: <em>dignificar y fortalecer el ejercicio de la administración como disciplina profesional en la entidad</em>.
+                        </p>
+                        <p class="text-gray-700 font-medium leading-relaxed">
+                            La mayoría de estos fundadores eran egresados del <strong>Instituto Tecnológico de Chetumal (ITCH)</strong>, institución educativa que formaba a los primeros administradores de la región y que sembró la semilla de lo que se convertiría en un referente gremial indiscutible.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2: Propósito y Educación Continua -->
+                <div class="bg-white p-8 rounded-3xl shadow-lg border-l-8 border-gray-800 relative overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center space-x-3 mb-4">
+                            <span class="bg-gray-100 text-gray-800 p-3 rounded-2xl font-black text-xl">02</span>
+                            <h3 class="text-2xl font-black text-gray-900 uppercase">Espíritu Gremial y Capacitación</h3>
+                        </div>
+                        <p class="text-gray-700 font-medium leading-relaxed mb-4">
+                            Movidos por el espíritu de colaboración propio de quienes recién egresan de las aulas y enfrentan juntos los retos del campo laboral, estos jóvenes profesionistas decidieron agruparse con un doble propósito:
+                        </p>
+                        <ul class="space-y-3 font-semibold text-gray-800 text-sm">
+                            <li class="flex items-start">
+                                <span class="text-brand-green font-black mr-2">✓</span>
+                                Sumar beneficios y fortalecer su presencia como gremio ante las instituciones públicas y privadas del estado.
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-brand-green font-black mr-2">✓</span>
+                                Garantizar un espacio permanente de educación continua frente a un entorno empresarial en constante cambio.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Tarjeta 3: Socios Fundadores (Destacado Especial) -->
+            <div class="bg-gradient-to-br from-gray-900 to-gray-800 text-white p-8 md:p-10 rounded-3xl shadow-2xl mb-12">
+                <div class="max-w-3xl mx-auto text-center">
+                    <span class="text-brand-green font-black text-xs uppercase tracking-widest block mb-2">Pioneros Institucionales</span>
+                    <h3 class="text-3xl font-black uppercase mb-6 text-white">Nuestros Socios Fundadores</h3>
+                    <p class="text-gray-300 font-medium mb-8">
+                        Entre los visionarios que dieron vida a este gran proyecto en Chetumal y formalizaron la constitución del Colegio mediante la firma del acta correspondiente, destacan:
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 text-left">
+                        <div class="bg-white/10 backdrop-blur p-4 rounded-2xl border border-white/10">
+                            <span class="text-brand-green font-black block text-sm">Licenciado</span>
+                            <span class="font-bold text-white">Eduardo Ovando Martínez</span>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur p-4 rounded-2xl border border-white/10">
+                            <span class="text-brand-green font-black block text-sm">Licenciada</span>
+                            <span class="font-bold text-white">María Octavia Manjarrez</span>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur p-4 rounded-2xl border border-white/10">
+                            <span class="text-brand-green font-black block text-sm">Licenciado</span>
+                            <span class="font-bold text-white">José Ernesto Rangel Osorio</span>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur p-4 rounded-2xl border border-white/10">
+                            <span class="text-brand-green font-black block text-sm">Licenciado</span>
+                            <span class="font-bold text-white">Anastacio Hernández Carrillo</span>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur p-4 rounded-2xl border border-white/10 sm:col-span-2 md:col-span-2">
+                            <span class="text-brand-green font-black block text-sm">Licenciado</span>
+                            <span class="font-bold text-white">Ricardo Aguilar y Angulo</span>
+                            <span class="text-xs text-gray-400 block mt-0.5">junto a otros comprometidos profesionistas.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjetas 4 y 5: Patrimonio y Liderazgo Actual -->
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <!-- Consolidación Patrimonial -->
+                <div class="bg-white p-8 rounded-3xl shadow-lg border border-gray-100 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center space-x-3 mb-4">
+                            <span class="bg-green-100 text-brand-green p-3 rounded-2xl font-black text-xl">03</span>
+                            <h3 class="text-2xl font-black text-gray-900 uppercase">Patrimonio y Sede Propia</h3>
+                        </div>
+                        <p class="text-gray-700 font-medium leading-relaxed">
+                            Fruto del esfuerzo sostenido de distintas generaciones, el Colegio logró la obtención de un predio propio en Chetumal sobre el cual se construyeron sus <strong>oficinas administrativas y un centro social con capacidad para 120 personas</strong>. Este espacio funciona como salón de eventos y es símbolo tangible del crecimiento, la perseverancia y la consolidación patrimonial tras más de tres décadas.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Estructura de Gobierno y Presidencia Actual -->
+                <div class="bg-white p-8 rounded-3xl shadow-lg border border-gray-100 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center space-x-3 mb-4">
+                            <span class="bg-green-100 text-brand-green p-3 rounded-2xl font-black text-xl">04</span>
+                            <h3 class="text-2xl font-black text-gray-900 uppercase">Gestión Actual (2025-2027)</h3>
+                        </div>
+                        <p class="text-gray-700 font-medium leading-relaxed mb-4">
+                            La estructura de gobierno se renueva cada dos años mediante comités directivos electos democráticamente. Actualmente encabeza la presidencia el <strong>Lic. José Manuel Meneses Domingo</strong> para el periodo <strong>2025-2027</strong>.
+                        </p>
+                        <div class="bg-gray-50 p-4 rounded-2xl border border-gray-200 text-xs font-bold text-gray-600">
+                            Dando continuidad al legado de servicio, profesionalismo y compromiso iniciado en 1991 por aquellos jóvenes egresados del ITCH.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
     <section id="actividades" class="py-20 bg-gray-50 px-4">
         <div class="max-w-6xl mx-auto">
             <h2 class="text-3xl font-black text-center mb-12 uppercase tracking-widest">Eventos y Actividades</h2>
 
+            <!-- Próximo Evento: Conferencia Seguridad Digital Personal -->
+            <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-brand-green/30 mb-10 flex flex-col md:flex-row relative">
+                <div class="absolute top-4 right-4 bg-brand-green text-white text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider shadow-sm z-10">
+                    ¡Próximo Evento!
+                </div>
+                <div class="md:w-1/3 bg-gray-50 p-6 flex items-center justify-center">
+                    <img src="conferencia.jpeg" class="max-h-96 rounded-xl shadow-md border object-contain hover:scale-105 transition duration-300" alt="Conferencia Seguridad Digital Personal">
+                </div>
+                <div class="md:w-2/3 p-8 flex flex-col justify-between">
+                    <div>
+                        <span class="text-brand-green font-black text-xs uppercase tracking-widest block mb-1">Conferencia Magistral</span>
+                        <h3 class="text-3xl font-black text-gray-900 mb-2 leading-tight">SEGURIDAD DIGITAL PERSONAL</h3>
+                        <p class="text-gray-600 font-bold italic mb-6">"Estrategias para no caer en las redes de los ciberdelincuentes"</p>
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6 bg-gray-50 p-4 rounded-2xl border border-gray-100 text-sm">
+                            <div>
+                                <span class="text-gray-400 font-black text-xs uppercase block">Conferencista</span>
+                                <span class="font-black text-gray-800">M.T.I Jorge René Fernández Balderas</span>
+                            </div>
+                            <div>
+                                <span class="text-gray-400 font-black text-xs uppercase block">Fecha y Hora</span>
+                                <span class="font-black text-gray-800">26 de septiembre de 2026 | 11:00 Hrs.</span>
+                            </div>
+                            <div>
+                                <span class="text-gray-400 font-black text-xs uppercase block">Lugar</span>
+                                <span class="font-bold text-gray-700">Instalaciones del Colegio (Av. Insurgentes 918)</span>
+                            </div>
+                            <div>
+                                <span class="text-gray-400 font-black text-xs uppercase block">Cuota de Aportación</span>
+                                <span class="font-black text-brand-green text-base">$100 pesos</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2 border-t border-gray-100">
+                        <span class="text-xs font-black text-gray-500">Mayor información al: <strong class="text-gray-900 text-sm">9831103154</strong></span>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScJ0GskRMu_3JyPOT9OgdINGQfCZlNepKF92j5gxj9sIncfIQ/viewform" target="_blank" class="w-full sm:w-auto bg-brand-green text-white font-black px-6 py-3 rounded-xl shadow hover:bg-green-600 transition text-center text-sm">
+                            REGISTRARSE AL EVENTO
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Evento Anterior / Galería -->
             <div class="bg-white rounded-3xl shadow-lg overflow-hidden border mb-10 flex flex-col md:flex-row">
                 <div class="md:w-1/3 bg-gray-100 p-4 flex items-center justify-center">
                     <img src="evento.jpeg" class="max-h-80 rounded-lg shadow-md" alt="Evento">
                 </div>
                 <div class="md:w-2/3 p-8">
-                    <span class="text-brand-green font-black text-xs uppercase tracking-widest">Próximo Evento / Reciente</span>
+                    <span class="text-gray-400 font-black text-xs uppercase tracking-widest">Evento Reciente</span>
                     <h3 class="text-3xl font-black my-2">DESAYUNO DE CONVIVENCIA PROFESIONAL</h3>
                     <p class="text-gray-600 font-bold mb-4">Sede del Colegio | 09:00 AM</p>
                     
@@ -144,7 +339,6 @@
             <div class="bg-white p-6 rounded-3xl shadow-md border border-gray-100">
                 <h3 class="text-lg font-black text-brand-green mb-4 uppercase">Comentarios Recientes</h3>
                 <div id="lista-comentarios" class="space-y-4 max-h-96 overflow-y-auto pr-2">
-                    <!-- Los comentarios aparecerán aquí mediante JS -->
                     <p id="no-comments" class="text-gray-400 text-center py-10 font-bold italic">Aún no hay comentarios. ¡Sé el primero!</p>
                 </div>
             </div>
@@ -166,12 +360,10 @@
         const listaComentarios = document.getElementById('lista-comentarios');
         const noCommentsMsg = document.getElementById('no-comments');
 
-        // Función para cargar comentarios guardados al iniciar
         window.onload = function() {
             renderComments();
         };
 
-        // Función para renderizar comentarios
         function renderComments() {
             const comments = JSON.parse(localStorage.getItem('colegio_comments')) || [];
             if (comments.length > 0) {
@@ -194,7 +386,6 @@
             }
         }
 
-        // Manejar el envío del formulario
         commentForm.addEventListener('submit', (e) => {
             e.preventDefault();
             
@@ -206,12 +397,10 @@
 
             const newComment = { name, text, date };
             
-            // Guardar en localStorage
             const comments = JSON.parse(localStorage.getItem('colegio_comments')) || [];
             comments.push(newComment);
             localStorage.setItem('colegio_comments', JSON.stringify(comments));
 
-            // Limpiar formulario y refrescar lista
             commentForm.reset();
             renderComments();
         });
