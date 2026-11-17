@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -18,7 +18,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            min-height: 75vh;
+            min-height: 7<!DOCTYPE html>5vh;
         }
         
         .hero-section::before {
@@ -51,23 +51,40 @@
 </head>
 <body class="bg-white text-gray-800 font-sans">
 
+    <!-- Barra de Navegación -->
     <nav class="bg-white shadow-md fixed w-full z-50 top-0">
         <div class="max-w-7xl mx-auto px-4 flex justify-between h-20 items-center">
             <div class="flex items-center space-x-3">
-                <img src="logo.jpeg" class="h-14 w-auto" alt="Logo">
+                <img src="logo.jpeg" class="h-14 w-auto" alt="Logo" onerror="this.src='https://placehold.co/60x60/70c131/ffffff?text=LAE'">
                 <span class="font-black text-sm leading-tight uppercase">COLEGIO <br><span class="text-brand-green">LAE</span></span>
             </div>
             <div class="hidden md:flex space-x-6 font-bold text-gray-600">
-                <a href="#inicio" class="hover:text-brand-green">Inicio</a>
-                <a href="#historia" class="hover:text-brand-green text-gray-900">Nuestra Historia</a>
-                <a href="#actividades" class="hover:text-brand-green">Actividades</a>
-                <a href="#mision-vision" class="hover:text-brand-green">Nosotros</a>
-                <a href="#comentarios" class="hover:text-brand-green">Comentarios</a>
-                <a href="#afiliate" class="text-brand-green">Afiliarse</a>
+                <a href="#inicio" class="hover:text-brand-green transition">Inicio</a>
+                <a href="#historia" class="hover:text-brand-green text-gray-900 transition">Nuestra Historia</a>
+                <a href="#actividades" class="hover:text-brand-green transition">Actividades</a>
+                <a href="#mision-vision" class="hover:text-brand-green transition">Nosotros</a>
+                <a href="#comentarios" class="hover:text-brand-green transition">Comentarios</a>
+                <a href="#afiliate" class="text-brand-green hover:underline transition">Afiliarse</a>
             </div>
+            <!-- Botón menú móvil -->
+            <div class="md:hidden">
+                <button id="mobile-menu-btn" class="text-gray-700 p-2 focus:outline-none">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+        <!-- Menú móvil desplegable -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-4 py-3 space-y-2 font-bold text-gray-700">
+            <a href="#inicio" class="block py-2 border-b border-gray-50">Inicio</a>
+            <a href="#historia" class="block py-2 border-b border-gray-50">Nuestra Historia</a>
+            <a href="#actividades" class="block py-2 border-b border-gray-50">Actividades</a>
+            <a href="#mision-vision" class="block py-2 border-b border-gray-50">Nosotros</a>
+            <a href="#comentarios" class="block py-2 border-b border-gray-50">Comentarios</a>
+            <a href="#afiliate" class="block py-2 text-brand-green">Afiliarse</a>
         </div>
     </nav>
 
+    <!-- Sección Inicio -->
     <section id="inicio" class="hero-section mt-20 px-6">
         <div class="max-w-5xl mx-auto text-center hero-content">
             <h1 class="text-4xl md:text-6xl font-black text-gray-900 mb-6 uppercase">
@@ -79,6 +96,7 @@
         </div>
     </section>
 
+    <!-- Sección Nuestra Historia -->
     <section id="historia" class="py-20 bg-gray-100/70 px-4">
         <div class="max-w-6xl mx-auto">
             
@@ -88,9 +106,9 @@
                 <div class="w-24 h-1.5 bg-brand-green mx-auto mt-4 rounded-full"></div>
             </div>
 
-            <!-- Imagen Destacada de la Historia (Banner Inicial) -->
+            <!-- Imagen Destacada de la Historia -->
             <div class="mb-12 rounded-3xl overflow-hidden shadow-2xl border-2 border-brand-green/20 group">
-                <img src="historia.jpeg" class="w-full h-auto object-cover transform group-hover:scale-[1.01] transition duration-500" alt="Historia del Colegio de LAES Quintana Roo">
+                <img src="historia.jpeg" class="w-full h-auto object-cover transform group-hover:scale-[1.01] transition duration-500" alt="Historia del Colegio de LAES Quintana Roo" onerror="this.src='https://placehold.co/1200x400/70c131/ffffff?text=Historia+del+Colegio+desde+1991'">
             </div>
 
             <!-- Datos Rápidos de Impacto -->
@@ -113,10 +131,8 @@
                 </div>
             </div>
 
-            <!-- Narrativa Organizada en Tarjetas Llamativas -->
+            <!-- Narrativa Organizada en Tarjetas -->
             <div class="grid md:grid-cols-2 gap-8 mb-12">
-                
-                <!-- Tarjeta 1: Los Orígenes -->
                 <div class="bg-white p-8 rounded-3xl shadow-lg border-l-8 border-brand-green relative overflow-hidden flex flex-col justify-between">
                     <div>
                         <div class="flex items-center space-x-3 mb-4">
@@ -132,7 +148,6 @@
                     </div>
                 </div>
 
-                <!-- Tarjeta 2: Propósito y Educación Continua -->
                 <div class="bg-white p-8 rounded-3xl shadow-lg border-l-8 border-gray-800 relative overflow-hidden flex flex-col justify-between">
                     <div>
                         <div class="flex items-center space-x-3 mb-4">
@@ -154,10 +169,9 @@
                         </ul>
                     </div>
                 </div>
-
             </div>
 
-            <!-- Tarjeta 3: Socios Fundadores (Destacado Especial) -->
+            <!-- Socios Fundadores -->
             <div class="bg-gradient-to-br from-gray-900 to-gray-800 text-white p-8 md:p-10 rounded-3xl shadow-2xl mb-12">
                 <div class="max-w-3xl mx-auto text-center">
                     <span class="text-brand-green font-black text-xs uppercase tracking-widest block mb-2">Pioneros Institucionales</span>
@@ -192,10 +206,8 @@
                 </div>
             </div>
 
-            <!-- Tarjetas 4 y 5: Patrimonio y Liderazgo Actual -->
+            <!-- Patrimonio y Liderazgo Actual -->
             <div class="grid md:grid-cols-2 gap-8">
-                
-                <!-- Consolidación Patrimonial -->
                 <div class="bg-white p-8 rounded-3xl shadow-lg border border-gray-100 flex flex-col justify-between">
                     <div>
                         <div class="flex items-center space-x-3 mb-4">
@@ -208,7 +220,6 @@
                     </div>
                 </div>
 
-                <!-- Estructura de Gobierno y Presidencia Actual -->
                 <div class="bg-white p-8 rounded-3xl shadow-lg border border-gray-100 flex flex-col justify-between">
                     <div>
                         <div class="flex items-center space-x-3 mb-4">
@@ -223,46 +234,42 @@
                         </div>
                     </div>
                 </div>
-
             </div>
 
         </div>
     </section>
 
+    <!-- Sección Actividades y Eventos -->
     <section id="actividades" class="py-20 bg-gray-50 px-4">
         <div class="max-w-6xl mx-auto">
             <h2 class="text-3xl font-black text-center mb-12 uppercase tracking-widest">Eventos y Actividades</h2>
 
-            <!-- Próximo Evento: Conferencia Seguridad Digital Personal -->
-            <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-brand-green/30 mb-10 flex flex-col md:flex-row relative">
+            <!-- Nuevo Próximo Evento: Desayuno del Día del Administrador -->
+            <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-brand-green/30 mb-16 flex flex-col md:flex-row relative">
                 <div class="absolute top-4 right-4 bg-brand-green text-white text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider shadow-sm z-10">
                     ¡Próximo Evento!
                 </div>
                 <div class="md:w-1/3 bg-gray-50 p-6 flex items-center justify-center">
-                    <img src="conferencia.jpeg" class="max-h-96 rounded-xl shadow-md border object-contain hover:scale-105 transition duration-300" alt="Conferencia Seguridad Digital Personal">
+                    <img src="WhatsApp Image 2026-11-14 at 12.03.52 PM.jpeg" class="max-h-96 rounded-xl shadow-md border object-contain hover:scale-105 transition duration-300" alt="Desayuno del Día del Administrador" onerror="this.src='https://placehold.co/400x550/70c131/ffffff?text=Desayuno+Dia+del+Administrador'">
                 </div>
                 <div class="md:w-2/3 p-8 flex flex-col justify-between">
                     <div>
-                        <span class="text-brand-green font-black text-xs uppercase tracking-widest block mb-1">Conferencia Magistral</span>
-                        <h3 class="text-3xl font-black text-gray-900 mb-2 leading-tight">SEGURIDAD DIGITAL PERSONAL</h3>
-                        <p class="text-gray-600 font-bold italic mb-6">"Estrategias para no caer en las redes de los ciberdelincuentes"</p>
+                        <span class="text-brand-green font-black text-xs uppercase tracking-widest block mb-1">Celebración Gremial</span>
+                        <h3 class="text-3xl font-black text-gray-900 mb-2 leading-tight">DESAYUNO DEL DÍA DEL ADMINISTRADOR</h3>
+                        <p class="text-gray-600 font-bold italic mb-6">"Administrar es construir oportunidades y generar un mejor futuro."</p>
                         
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6 bg-gray-50 p-4 rounded-2xl border border-gray-100 text-sm">
                             <div>
-                                <span class="text-gray-400 font-black text-xs uppercase block">Conferencista</span>
-                                <span class="font-black text-gray-800">M.T.I Jorge René Fernández Balderas</span>
+                                <span class="text-gray-400 font-black text-xs uppercase block">Día y Hora</span>
+                                <span class="font-black text-gray-800">Sábado 5 de diciembre de 2026 | 9:00 Hrs</span>
                             </div>
                             <div>
-                                <span class="text-gray-400 font-black text-xs uppercase block">Fecha y Hora</span>
-                                <span class="font-black text-gray-800">26 de septiembre de 2026 | 11:00 Hrs.</span>
+                                <span class="text-gray-400 font-black text-xs uppercase block">Aportación</span>
+                                <span class="font-black text-brand-green text-base">$250.00</span>
                             </div>
-                            <div>
+                            <div class="sm:col-span-2">
                                 <span class="text-gray-400 font-black text-xs uppercase block">Lugar</span>
-                                <span class="font-bold text-gray-700">Instalaciones del Colegio (Av. Insurgentes 918)</span>
-                            </div>
-                            <div>
-                                <span class="text-gray-400 font-black text-xs uppercase block">Cuota de Aportación</span>
-                                <span class="font-black text-brand-green text-base">$100 pesos</span>
+                                <span class="font-bold text-gray-700">Instalaciones del Colegio de Licenciados en Administración de Empresas del Estado de Q. Roo, Insurgentes 918</span>
                             </div>
                         </div>
                     </div>
@@ -276,28 +283,62 @@
                 </div>
             </div>
 
-            <!-- Evento Anterior / Galería -->
-            <div class="bg-white rounded-3xl shadow-lg overflow-hidden border mb-10 flex flex-col md:flex-row">
-                <div class="md:w-1/3 bg-gray-100 p-4 flex items-center justify-center">
-                    <img src="evento.jpeg" class="max-h-80 rounded-lg shadow-md" alt="Evento">
+            <!-- Subsección: Eventos Pasados en fila y en orden cronológico -->
+            <div class="mt-16">
+                <div class="flex items-center justify-center mb-10">
+                    <div class="h-px bg-gray-300 flex-grow max-w-xs"></div>
+                    <h3 class="text-2xl font-black text-gray-800 uppercase tracking-wider px-6 text-center">Eventos Pasados</h3>
+                    <div class="h-px bg-gray-300 flex-grow max-w-xs"></div>
                 </div>
-                <div class="md:w-2/3 p-8">
-                    <span class="text-gray-400 font-black text-xs uppercase tracking-widest">Evento Reciente</span>
-                    <h3 class="text-3xl font-black my-2">DESAYUNO DE CONVIVENCIA PROFESIONAL</h3>
-                    <p class="text-gray-600 font-bold mb-4">Sede del Colegio | 09:00 AM</p>
-                    
-                    <div class="grid grid-cols-5 gap-2 mt-4">
-                        <img src="e1.jpeg" class="h-16 w-full object-cover rounded-lg border">
-                        <img src="e2.jpeg" class="h-16 w-full object-cover rounded-lg border">
-                        <img src="e3.jpeg" class="h-16 w-full object-cover rounded-lg border">
-                        <img src="e4.jpeg" class="h-16 w-full object-cover rounded-lg border">
-                        <img src="e5.jpeg" class="h-16 w-full object-cover rounded-lg border">
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Evento Pasado 1 (Más reciente): Conferencia Seguridad Digital Personal -->
+                    <div class="bg-white rounded-3xl shadow-lg overflow-hidden border border-gray-100 flex flex-col justify-between">
+                        <div>
+                            <div class="bg-gray-100 p-4 flex items-center justify-center h-64 relative">
+                                <span class="absolute top-3 left-3 bg-gray-800 text-white text-[10px] font-black px-2.5 py-1 rounded-full uppercase">26 Sep 2026</span>
+                                <img src="conferencia.jpeg" class="max-h-56 rounded-lg shadow-sm object-contain" alt="Conferencia Seguridad Digital Personal" onerror="this.src='https://placehold.co/400x300/e2e8f0/475569?text=Conferencia+Seguridad+Digital'">
+                            </div>
+                            <div class="p-6">
+                                <span class="text-brand-green font-black text-xs uppercase tracking-widest block mb-1">Conferencia Magistral</span>
+                                <h4 class="text-xl font-black text-gray-900 mb-2">SEGURIDAD DIGITAL PERSONAL</h4>
+                                <p class="text-gray-600 text-xs font-bold italic mb-4">"Estrategias para no caer en las redes de los ciberdelincuentes"</p>
+                                <div class="space-y-1 text-xs text-gray-700 bg-gray-50 p-3 rounded-xl border border-gray-100">
+                                    <p><strong>Ponente:</strong> M.T.I Jorge René Fernández Balderas</p>
+                                    <p><strong>Sede:</strong> Instalaciones del Colegio (Av. Insurgentes 918)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Evento Pasado 2 (Anterior): Desayuno de Convivencia Profesional -->
+                    <div class="bg-white rounded-3xl shadow-lg overflow-hidden border border-gray-100 flex flex-col justify-between">
+                        <div>
+                            <div class="bg-gray-100 p-4 flex items-center justify-center h-64 relative">
+                                <span class="absolute top-3 left-3 bg-gray-800 text-white text-[10px] font-black px-2.5 py-1 rounded-full uppercase">Evento Anterior</span>
+                                <img src="evento.jpeg" class="max-h-56 rounded-lg shadow-sm object-contain" alt="Desayuno de Convivencia Profesional" onerror="this.src='https://placehold.co/400x300/e2e8f0/475569?text=Desayuno+Convivencia'">
+                            </div>
+                            <div class="p-6">
+                                <span class="text-brand-green font-black text-xs uppercase tracking-widest block mb-1">Vínculo Gremial</span>
+                                <h4 class="text-xl font-black text-gray-900 mb-2">DESAYUNO DE CONVIVENCIA PROFESIONAL</h4>
+                                <p class="text-gray-600 text-xs font-bold mb-4">Sede del Colegio | 09:00 AM</p>
+                                
+                                <div class="grid grid-cols-5 gap-1.5 mt-2">
+                                    <img src="e1.jpeg" class="h-12 w-full object-cover rounded-md border" alt="Foto 1" onerror="this.src='https://placehold.co/150x100/e2e8f0/475569?text=1'">
+                                    <img src="e2.jpeg" class="h-12 w-full object-cover rounded-md border" alt="Foto 2" onerror="this.src='https://placehold.co/150x100/e2e8f0/475569?text=2'">
+                                    <img src="e3.jpeg" class="h-12 w-full object-cover rounded-md border" alt="Foto 3" onerror="this.src='https://placehold.co/150x100/e2e8f0/475569?text=3'">
+                                    <img src="e4.jpeg" class="h-12 w-full object-cover rounded-md border" alt="Foto 4" onerror="this.src='https://placehold.co/150x100/e2e8f0/475569?text=4'">
+                                    <img src="e5.jpeg" class="h-12 w-full object-cover rounded-md border" alt="Foto 5" onerror="this.src='https://placehold.co/150x100/e2e8f0/475569?text=5'">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Sección Misión y Visión -->
     <section id="mision-vision" class="py-20 bg-white px-6">
         <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-10">
             <div class="border-l-4 border-brand-green pl-6">
@@ -311,11 +352,11 @@
         </div>
     </section>
 
+    <!-- Sección Buzón de Comentarios -->
     <section id="comentarios" class="py-20 bg-gray-50 px-4">
         <div class="max-w-4xl mx-auto">
             <h2 class="text-3xl font-black text-center mb-10 uppercase tracking-widest text-gray-900">Buzón de Comentarios</h2>
             
-            <!-- Formulario de Comentario -->
             <div class="bg-white p-8 rounded-3xl shadow-xl border border-gray-100 mb-10">
                 <div class="mb-6 text-center">
                     <p class="text-gray-500 font-bold italic">¡Tu opinión nos ayuda a crecer como comunidad!</p>
@@ -335,7 +376,6 @@
                 </form>
             </div>
 
-            <!-- Lista de Comentarios Registrados -->
             <div class="bg-white p-6 rounded-3xl shadow-md border border-gray-100">
                 <h3 class="text-lg font-black text-brand-green mb-4 uppercase">Comentarios Recientes</h3>
                 <div id="lista-comentarios" class="space-y-4 max-h-96 overflow-y-auto pr-2">
@@ -345,10 +385,11 @@
         </div>
     </section>
 
+    <!-- Footer y Afiliación -->
     <footer id="afiliate" class="bg-gray-900 text-white py-16 px-6 text-center">
-        <img src="logo.jpeg" class="h-20 mx-auto mb-6 grayscale invert" alt="Logo">
+        <img src="logo.jpeg" class="h-20 mx-auto mb-6 grayscale invert" alt="Logo" onerror="this.src='https://placehold.co/80x80/ffffff/111827?text=LAE'">
         <h2 class="text-2xl font-black mb-6 uppercase">¿LISTO PARA AFILIARTE?</h2>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLScJ0GskRMu_3JyPOT9OgdINGQfCZlNepKF92j5gxj9sIncfIQ/viewform" target="_blank" class="bg-brand-green px-10 py-4 rounded-full font-black hover:bg-white hover:text-brand-green transition">RELLENAR FORMULARIO</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScJ0GskRMu_3JyPOT9OgdINGQfCZlNepKF92j5gxj9sIncfIQ/viewform" target="_blank" class="bg-brand-green px-10 py-4 rounded-full font-black hover:bg-white hover:text-brand-green transition inline-block">RELLENAR FORMULARIO</a>
         
         <p class="mt-12 text-gray-500 text-xs font-bold uppercase tracking-widest">
             Av. Insurgentes 918, Chetumal, Q. Roo | © 2026 Colegio de Licenciados en Administración
@@ -356,6 +397,17 @@
     </footer>
 
     <script>
+        // Menú móvil
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        });
+
+        // Sistema de Comentarios
         const commentForm = document.getElementById('comment-form');
         const listaComentarios = document.getElementById('lista-comentarios');
         const noCommentsMsg = document.getElementById('no-comments');
@@ -369,7 +421,7 @@
             if (comments.length > 0) {
                 noCommentsMsg.style.display = 'none';
                 listaComentarios.innerHTML = '';
-                comments.reverse().forEach(c => {
+                comments.slice().reverse().forEach(c => {
                     const commentEl = document.createElement('div');
                     commentEl.className = 'p-4 bg-gray-50 rounded-2xl border border-gray-100 shadow-sm';
                     commentEl.innerHTML = `
